@@ -1,4 +1,4 @@
-package com.android.insecurebankv2;
+package com.differentpackage.insecurebankv2;
 
 import java.util.HashMap;
 
@@ -23,7 +23,7 @@ public class TrackUserContentProvider extends ContentProvider {
 
 	//   This content provider vuln is a modified code from www.androidpentesting.com
 
-	static final String PROVIDER_NAME = "com.android.insecurebankv2.TrackUserContentProvider";
+	static final String PROVIDER_NAME = "TrackUserContentProvider";
 	//   The Content provider that handles all the tracked user history
 	static final String URL = "content://" + PROVIDER_NAME + "/trackerusers";
 	static final Uri CONTENT_URI = Uri.parse(URL);

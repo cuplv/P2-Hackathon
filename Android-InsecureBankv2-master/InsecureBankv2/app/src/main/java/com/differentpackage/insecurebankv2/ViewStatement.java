@@ -1,4 +1,4 @@
-package com.android.insecurebankv2;
+package com.differentpackage.insecurebankv2;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -8,7 +8,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.webkit.WebChromeClient;
 import android.webkit.WebView;
-import android.widget.Toast;
 
 import com.marcohc.toasteroid.Toasteroid;
 

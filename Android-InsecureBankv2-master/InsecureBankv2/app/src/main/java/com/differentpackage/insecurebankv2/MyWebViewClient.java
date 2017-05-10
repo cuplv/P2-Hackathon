@@ -1,4 +1,4 @@
-package com.android.insecurebankv2;
+package com.differentpackage.insecurebankv2;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
