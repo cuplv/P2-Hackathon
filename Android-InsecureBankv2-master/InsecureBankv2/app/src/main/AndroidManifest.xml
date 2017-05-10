@@ -33,7 +33,7 @@
         <!--
         android:theme="@style/AppTheme"-->
         <activity
-            android:name="com.stupidpackage.insecurebankv2.LoginActivity"
+            android:name=".LoginActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -42,42 +42,42 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.stupidpackage.insecurebankv2.FilePrefActivity"
+            android:name=".FilePrefActivity"
             android:label="@string/title_activity_file_pref"
             android:windowSoftInputMode="stateVisible|adjustResize|adjustPan">
         </activity>
         <activity
-            android:name="com.stupidpackage.insecurebankv2.DoLogin"
+            android:name=".DoLogin"
             android:label="@string/title_activity_do_login" >
         </activity>
         <activity
-            android:name="com.stupidpackage.insecurebankv2.PostLogin"
+            android:name=".PostLogin"
             android:exported="true"
             android:label="@string/title_activity_post_login" >
         </activity>
         <activity
-            android:name="com.stupidpackage.insecurebankv2.WrongLogin"
+            android:name=".WrongLogin"
             android:label="@string/title_activity_wrong_login" >
         </activity>
         <activity
-            android:name="com.stupidpackage.insecurebankv2.DoTransfer"
+            android:name=".DoTransfer"
             android:exported="true"
             android:label="@string/title_activity_do_transfer" >
         </activity>
         <activity
-            android:name="com.stupidpackage.insecurebankv2.ViewStatement"
+            android:name=".ViewStatement"
             android:exported="true"
             android:label="@string/title_activity_view_statement" >
         </activity>
 
         <provider
-            android:name="com.stupidpackage.insecurebankv2.TrackUserContentProvider"
-            android:authorities="com.stupidpackage.insecurebankv2.TrackUserContentProvider"
+            android:name=".TrackUserContentProvider"
+            android:authorities="com.android.insecurebankv2.TrackUserContentProvider"
             android:exported="true" >
         </provider>
 
         <receiver
-            android:name="com.stupidpackage.insecurebankv2.MyBroadCastReceiver"
+            android:name=".MyBroadCastReceiver"
             android:exported="true" >
             <intent-filter>
                 <action android:name="theBroadcast" >
@@ -86,7 +86,7 @@
         </receiver>
 
         <activity
-            android:name="com.stupidpackage.insecurebankv2.ChangePassword"
+            android:name=".ChangePassword"
             android:exported="true"
             android:label="@string/title_activity_change_password" >
         </activity>

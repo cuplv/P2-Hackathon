@@ -1,4 +1,4 @@
-package com.stupidpackage.insecurebankv2;
+package com.android.insecurebankv2;
 
 import java.io.BufferedReader;
 import java.io.IOException;

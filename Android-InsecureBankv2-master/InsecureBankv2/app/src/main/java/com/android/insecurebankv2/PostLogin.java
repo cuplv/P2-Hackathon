@@ -1,4 +1,4 @@
-package com.stupidpackage.insecurebankv2;
+package com.android.insecurebankv2;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -7,11 +7,16 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.File;
+import java.io.IOException;
 import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+import java.util.ArrayList;
 
 /*
 The page that allows gives the user below functionalities
