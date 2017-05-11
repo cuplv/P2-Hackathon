@@ -1,0 +1,2 @@
+InsecureBankv2_moveLog -> move log to onPost since we don't currently handle threading
+InsecureBankv2_sanitize -> add sanitize call to onCreate and add password to asyncTask
