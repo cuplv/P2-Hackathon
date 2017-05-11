@@ -70,12 +70,6 @@
             android:label="@string/title_activity_view_statement" >
         </activity>
 
-        <provider
-            android:name="com.differentpackage.insecurebankv2.TrackUserContentProvider"
-            android:authorities="com.differentpackage.insecurebankv2.TrackUserContentProvider"
-            android:exported="true" >
-        </provider>
-
         <receiver
             android:name="com.differentpackage.insecurebankv2.MyBroadCastReceiver"
             android:exported="true" >

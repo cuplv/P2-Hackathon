@@ -41,6 +41,7 @@ public class TrackUserContentProvider extends ContentProvider {
 		uriMatcher = new UriMatcher(UriMatcher.NO_MATCH);
 		uriMatcher.addURI(PROVIDER_NAME, "trackerusers", uriCode);
 		uriMatcher.addURI(PROVIDER_NAME, "trackerusers/*", uriCode);
+		uriMatcher.addURI(PROVIDER_NAME, "trackerusers/*", uriCode);
 	}
 	@Override
 	public int delete(Uri uri, String selection, String[] selectionArgs) {

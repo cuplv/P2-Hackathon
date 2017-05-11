@@ -5,7 +5,7 @@ android {
     buildToolsVersion "22.0.1"
 
     defaultConfig {
-        applicationId "com.stupidpackage.insecurebankv2"
+        applicationId "com.differentpackage.insecurebankv2"
         minSdkVersion 15
         targetSdkVersion 22
         versionCode 1
