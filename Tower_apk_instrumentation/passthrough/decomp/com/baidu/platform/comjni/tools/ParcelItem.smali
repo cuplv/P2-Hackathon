@@ -1,0 +1,87 @@
+.class public Lcom/baidu/platform/comjni/tools/ParcelItem;
+.super Ljava/lang/Object;
+.source "dalvik_source_tower-dev-debug.400010.apk"
+
+# interfaces
+.implements Landroid/os/Parcelable;
+
+
+# static fields
+.field public static final a:Landroid/os/Parcelable$Creator;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Landroid/os/Parcelable$Creator",
+            "<",
+            "Lcom/baidu/platform/comjni/tools/ParcelItem;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+
+# instance fields
+.field private b:Landroid/os/Bundle;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .registers 1
+
+    new-instance v0, Lcom/baidu/platform/comjni/tools/b;
+
+    .local v0, "$r0":Lcom/baidu/platform/comjni/tools/b;, ""
+    invoke-direct {v0}, Lcom/baidu/platform/comjni/tools/b;-><init>()V
+
+    sput-object v0, Lcom/baidu/platform/comjni/tools/ParcelItem;->a:Landroid/os/Parcelable$Creator;
+
+    return-void
+    .end local v0    # "$r0":Lcom/baidu/platform/comjni/tools/b;, ""
+.end method
+
+.method public constructor <init>()V
+    .registers 1
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public describeContents()I
+    .registers 2
+
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
+.method public getBundle()Landroid/os/Bundle;
+    .registers 2
+
+    iget-object v0, p0, Lcom/baidu/platform/comjni/tools/ParcelItem;->b:Landroid/os/Bundle;
+
+    .local v0, "r1":Landroid/os/Bundle;, ""
+    return-object v0
+    .end local v0    # "r1":Landroid/os/Bundle;, ""
+.end method
+
+.method public setBundle(Landroid/os/Bundle;)V
+    .registers 2
+
+    iput-object p1, p0, Lcom/baidu/platform/comjni/tools/ParcelItem;->b:Landroid/os/Bundle;
+
+    return-void
+.end method
+
+.method public writeToParcel(Landroid/os/Parcel;I)V
+    .registers 4
+
+    iget-object v0, p0, Lcom/baidu/platform/comjni/tools/ParcelItem;->b:Landroid/os/Bundle;
+
+    .local v0, "$r2":Landroid/os/Bundle;, ""
+    invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeBundle(Landroid/os/Bundle;)V
+
+    return-void
+    .end local v0    # "$r2":Landroid/os/Bundle;, ""
+.end method

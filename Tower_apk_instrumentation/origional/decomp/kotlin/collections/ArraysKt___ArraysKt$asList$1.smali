@@ -1,0 +1,367 @@
+.class public final Lkotlin/collections/ArraysKt___ArraysKt$asList$1;
+.super Ljava/util/AbstractList;
+.source "_Arrays.kt"
+
+# interfaces
+.implements Ljava/util/RandomAccess;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lkotlin/collections/ArraysKt___ArraysKt;->asList([B)Ljava/util/List;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/util/AbstractList",
+        "<",
+        "Ljava/lang/Byte;",
+        ">;",
+        "Ljava/util/RandomAccess;"
+    }
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    bv = {
+        0x1,
+        0x0,
+        0x0
+    }
+    d1 = {
+        "\u0000%\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u0005\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0008\n\u0002\u0008\u0003\n\u0002\u0010\u000b\n\u0002\u0008\u0008*\u0001\u0000\u0008\n\u0018\u00002\u0008\u0012\u0004\u0012\u00020\u00020\u00012\u00020\u0003B\u0005\u00a2\u0006\u0002\u0010\u0004J\u0011\u0010\t\u001a\u00020\n2\u0006\u0010\u000b\u001a\u00020\u0002H\u0096\u0002J\u0016\u0010\u000c\u001a\u00020\u00022\u0006\u0010\r\u001a\u00020\u0006H\u0096\u0002\u00a2\u0006\u0002\u0010\u000eJ\u0010\u0010\u000f\u001a\u00020\u00062\u0006\u0010\u000b\u001a\u00020\u0002H\u0016J\u0008\u0010\u0010\u001a\u00020\nH\u0016J\u0010\u0010\u0011\u001a\u00020\u00062\u0006\u0010\u000b\u001a\u00020\u0002H\u0016R\u0014\u0010\u0005\u001a\u00020\u00068VX\u0096\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u0007\u0010\u0008\u00a8\u0006\u0012"
+    }
+    d2 = {
+        "kotlin/collections/ArraysKt___ArraysKt$asList$1",
+        "Ljava/util/AbstractList;",
+        "",
+        "Ljava/util/RandomAccess;",
+        "([B)V",
+        "size",
+        "",
+        "getSize",
+        "()I",
+        "contains",
+        "",
+        "element",
+        "get",
+        "index",
+        "(I)Ljava/lang/Byte;",
+        "indexOf",
+        "isEmpty",
+        "lastIndexOf",
+        "kotlin-stdlib"
+    }
+    k = 0x1
+    mv = {
+        0x1,
+        0x1,
+        0x0
+    }
+.end annotation
+
+
+# instance fields
+.field final synthetic receiver$0:[B
+
+
+# direct methods
+.method constructor <init>([B)V
+    .registers 2
+    .param p1, "$receiver"    # [B
+
+    .prologue
+    .line 11791
+    iput-object p1, p0, Lkotlin/collections/ArraysKt___ArraysKt$asList$1;->receiver$0:[B
+
+    invoke-direct {p0}, Ljava/util/AbstractList;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public contains(B)Z
+    .registers 3
+    .param p1, "element"    # B
+
+    .prologue
+    .line 11794
+    iget-object v0, p0, Lkotlin/collections/ArraysKt___ArraysKt$asList$1;->receiver$0:[B
+
+    invoke-static {v0, p1}, Lkotlin/collections/ArraysKt;->contains([BB)Z
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public final bridge contains(Ljava/lang/Object;)Z
+    .registers 3
+
+    .prologue
+    .line 11791
+    instance-of v0, p1, Ljava/lang/Byte;
+
+    if-nez v0, :cond_6
+
+    const/4 v0, 0x0
+
+    :goto_5
+    return v0
+
+    :cond_6
+    check-cast p1, Ljava/lang/Number;
+
+    invoke-virtual {p1}, Ljava/lang/Number;->byteValue()B
+
+    move-result v0
+
+    invoke-virtual {p0, v0}, Lkotlin/collections/ArraysKt___ArraysKt$asList$1;->contains(B)Z
+
+    move-result v0
+
+    goto :goto_5
+.end method
+
+.method public get(I)Ljava/lang/Byte;
+    .registers 3
+    .param p1, "index"    # I
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+
+    .prologue
+    .line 11795
+    iget-object v0, p0, Lkotlin/collections/ArraysKt___ArraysKt$asList$1;->receiver$0:[B
+
+    aget-byte v0, v0, p1
+
+    invoke-static {v0}, Ljava/lang/Byte;->valueOf(B)Ljava/lang/Byte;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public bridge synthetic get(I)Ljava/lang/Object;
+    .registers 3
+
+    .prologue
+    .line 11791
+    invoke-virtual {p0, p1}, Lkotlin/collections/ArraysKt___ArraysKt$asList$1;->get(I)Ljava/lang/Byte;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public getSize()I
+    .registers 2
+
+    .prologue
+    .line 11792
+    iget-object v0, p0, Lkotlin/collections/ArraysKt___ArraysKt$asList$1;->receiver$0:[B
+
+    array-length v0, v0
+
+    return v0
+.end method
+
+.method public indexOf(B)I
+    .registers 3
+    .param p1, "element"    # B
+
+    .prologue
+    .line 11796
+    iget-object v0, p0, Lkotlin/collections/ArraysKt___ArraysKt$asList$1;->receiver$0:[B
+
+    invoke-static {v0, p1}, Lkotlin/collections/ArraysKt;->indexOf([BB)I
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public final bridge indexOf(Ljava/lang/Object;)I
+    .registers 3
+
+    .prologue
+    .line 11791
+    instance-of v0, p1, Ljava/lang/Byte;
+
+    if-nez v0, :cond_6
+
+    const/4 v0, -0x1
+
+    :goto_5
+    return v0
+
+    :cond_6
+    check-cast p1, Ljava/lang/Number;
+
+    invoke-virtual {p1}, Ljava/lang/Number;->byteValue()B
+
+    move-result v0
+
+    invoke-virtual {p0, v0}, Lkotlin/collections/ArraysKt___ArraysKt$asList$1;->indexOf(B)I
+
+    move-result v0
+
+    goto :goto_5
+.end method
+
+.method public isEmpty()Z
+    .registers 2
+
+    .prologue
+    .line 11793
+    iget-object v0, p0, Lkotlin/collections/ArraysKt___ArraysKt$asList$1;->receiver$0:[B
+
+    nop
+
+    .line 13199
+    array-length v0, v0
+
+    if-nez v0, :cond_8
+
+    const/4 v0, 0x1
+
+    .line 11793
+    :goto_7
+    return v0
+
+    .line 13199
+    :cond_8
+    const/4 v0, 0x0
+
+    goto :goto_7
+.end method
+
+.method public lastIndexOf(B)I
+    .registers 3
+    .param p1, "element"    # B
+
+    .prologue
+    .line 11797
+    iget-object v0, p0, Lkotlin/collections/ArraysKt___ArraysKt$asList$1;->receiver$0:[B
+
+    invoke-static {v0, p1}, Lkotlin/collections/ArraysKt;->lastIndexOf([BB)I
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public final bridge lastIndexOf(Ljava/lang/Object;)I
+    .registers 3
+
+    .prologue
+    .line 11791
+    instance-of v0, p1, Ljava/lang/Byte;
+
+    if-nez v0, :cond_6
+
+    const/4 v0, -0x1
+
+    :goto_5
+    return v0
+
+    :cond_6
+    check-cast p1, Ljava/lang/Number;
+
+    invoke-virtual {p1}, Ljava/lang/Number;->byteValue()B
+
+    move-result v0
+
+    invoke-virtual {p0, v0}, Lkotlin/collections/ArraysKt___ArraysKt$asList$1;->lastIndexOf(B)I
+
+    move-result v0
+
+    goto :goto_5
+.end method
+
+.method public final bridge remove(I)Ljava/lang/Byte;
+    .registers 3
+
+    .prologue
+    .line 11791
+    invoke-virtual {p0, p1}, Lkotlin/collections/ArraysKt___ArraysKt$asList$1;->removeAt(I)Ljava/lang/Byte;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public bridge remove(Ljava/lang/Byte;)Z
+    .registers 3
+
+    .prologue
+    .line 11791
+    invoke-super {p0, p1}, Ljava/util/AbstractList;->remove(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public final bridge remove(Ljava/lang/Object;)Z
+    .registers 3
+
+    .prologue
+    .line 11791
+    if-eqz p1, :cond_8
+
+    instance-of v0, p1, Ljava/lang/Byte;
+
+    :goto_4
+    if-nez v0, :cond_a
+
+    const/4 v0, 0x0
+
+    :goto_7
+    return v0
+
+    :cond_8
+    const/4 v0, 0x1
+
+    goto :goto_4
+
+    :cond_a
+    check-cast p1, Ljava/lang/Byte;
+
+    invoke-virtual {p0, p1}, Lkotlin/collections/ArraysKt___ArraysKt$asList$1;->remove(Ljava/lang/Byte;)Z
+
+    move-result v0
+
+    goto :goto_7
+.end method
+
+.method public bridge removeAt(I)Ljava/lang/Byte;
+    .registers 3
+
+    .prologue
+    .line 11791
+    invoke-super {p0, p1}, Ljava/util/AbstractList;->remove(I)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/lang/Byte;
+
+    return-object v0
+.end method
+
+.method public final bridge size()I
+    .registers 2
+
+    .prologue
+    .line 11791
+    invoke-virtual {p0}, Lkotlin/collections/ArraysKt___ArraysKt$asList$1;->getSize()I
+
+    move-result v0
+
+    return v0
+.end method

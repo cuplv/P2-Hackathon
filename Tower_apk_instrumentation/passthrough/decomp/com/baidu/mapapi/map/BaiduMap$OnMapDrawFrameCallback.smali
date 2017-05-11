@@ -1,0 +1,19 @@
+.class public interface abstract Lcom/baidu/mapapi/map/BaiduMap$OnMapDrawFrameCallback;
+.super Ljava/lang/Object;
+.source "dalvik_source_tower-dev-debug.400010.apk"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/baidu/mapapi/map/BaiduMap;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x609
+    name = "OnMapDrawFrameCallback"
+.end annotation
+
+
+# virtual methods
+.method public abstract onMapDrawFrame(Ljavax/microedition/khronos/opengles/GL10;Lcom/baidu/mapapi/map/MapStatus;)V
+.end method

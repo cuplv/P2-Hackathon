@@ -1,0 +1,29 @@
+.class interface abstract Lcom/google/android/gms/tagmanager/DataLayer$zzb;
+.super Ljava/lang/Object;
+.source "dalvik_source_tower-dev-debug.400010.apk"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/google/android/gms/tagmanager/DataLayer;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x608
+    name = "zzb"
+.end annotation
+
+
+# virtual methods
+.method public abstract zzaw(Ljava/util/Map;)V
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/Map",
+            "<",
+            "Ljava/lang/String;",
+            "Ljava/lang/Object;",
+            ">;)V"
+        }
+    .end annotation
+.end method

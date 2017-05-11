@@ -1,0 +1,32 @@
+.class public interface abstract Lcom/google/android/gms/maps/internal/zzb;
+.super Ljava/lang/Object;
+.source "dalvik_source_tower-dev-debug.400010.apk"
+
+# interfaces
+.implements Landroid/os/IInterface;
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/google/android/gms/maps/internal/zzb$zza;
+    }
+.end annotation
+
+
+# virtual methods
+.method public abstract onCancel()V
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
+.end method
+
+.method public abstract onFinish()V
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
+.end method

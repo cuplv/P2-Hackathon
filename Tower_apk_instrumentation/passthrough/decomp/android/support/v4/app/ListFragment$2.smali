@@ -1,0 +1,87 @@
+.class Landroid/support/v4/app/ListFragment$2;
+.super Ljava/lang/Object;
+.source "ListFragment.java"
+
+# interfaces
+.implements Landroid/widget/AdapterView$OnItemClickListener;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroid/support/v4/app/ListFragment;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic this$0:Landroid/support/v4/app/ListFragment;
+
+
+# direct methods
+.method constructor <init>(Landroid/support/v4/app/ListFragment;)V
+    .registers 2
+
+    .line 56
+    iput-object p1, p0, Landroid/support/v4/app/ListFragment$2;->this$0:Landroid/support/v4/app/ListFragment;
+
+    .line 56
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public onItemClick(Landroid/widget/AdapterView;Landroid/view/View;IJ)V
+    .registers 15
+    .param p2, "v"    # Landroid/view/View;
+    .param p3, "position"    # I
+    .param p4, "id"    # J
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroid/widget/AdapterView",
+            "<*>;",
+            "Landroid/view/View;",
+            "IJ)V"
+        }
+    .end annotation
+
+    .line 58
+    iget-object v6, p0, Landroid/support/v4/app/ListFragment$2;->this$0:Landroid/support/v4/app/ListFragment;
+
+    .local v6, "$r3":Landroid/support/v4/app/ListFragment;, ""
+    move-object v8, p1
+
+    check-cast v8, Landroid/widget/ListView;
+
+    move-object v7, v8
+
+    .line 58
+    .local v7, "$r4":Landroid/widget/ListView;, ""
+    move-object v0, v6
+
+    .line 58
+    move-object v1, v7
+
+    .line 58
+    move-object v2, p2
+
+    .line 58
+    move v3, p3
+
+    .line 58
+    move-wide v4, p4
+
+    .line 58
+    invoke-virtual/range {v0 .. v5}, Landroid/support/v4/app/ListFragment;->onListItemClick(Landroid/widget/ListView;Landroid/view/View;IJ)V
+
+    .line 59
+    return-void
+    .end local v6    # "$r3":Landroid/support/v4/app/ListFragment;, ""
+    .end local v7    # "$r4":Landroid/widget/ListView;, ""
+.end method

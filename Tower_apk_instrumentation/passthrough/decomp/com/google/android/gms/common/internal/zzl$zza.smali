@@ -1,0 +1,22 @@
+.class public interface abstract Lcom/google/android/gms/common/internal/zzl$zza;
+.super Ljava/lang/Object;
+.source "dalvik_source_tower-dev-debug.400010.apk"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/google/android/gms/common/internal/zzl;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x609
+    name = "zza"
+.end annotation
+
+
+# virtual methods
+.method public abstract isConnected()Z
+.end method
+
+.method public abstract zzamh()Landroid/os/Bundle;
+.end method
