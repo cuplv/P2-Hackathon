@@ -1,0 +1,90 @@
+.class Landroid/support/v7/internal/widget/AdapterViewCompat$OnItemClickListenerWrapper;
+.super Ljava/lang/Object;
+.source "AdapterViewCompat.java"
+
+# interfaces
+.implements Landroid/widget/AdapterView$OnItemClickListener;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroid/support/v7/internal/widget/AdapterViewCompat;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = "OnItemClickListenerWrapper"
+.end annotation
+
+
+# instance fields
+.field private final mWrappedListener:Landroid/support/v7/internal/widget/AdapterViewCompat$OnItemClickListener;
+
+.field final synthetic this$0:Landroid/support/v7/internal/widget/AdapterViewCompat;
+
+
+# direct methods
+.method public constructor <init>(Landroid/support/v7/internal/widget/AdapterViewCompat;Landroid/support/v7/internal/widget/AdapterViewCompat$OnItemClickListener;)V
+    .locals 0
+    .param p2, "listener"    # Landroid/support/v7/internal/widget/AdapterViewCompat$OnItemClickListener;
+
+    .line 267
+    iput-object p1, p0, Landroid/support/v7/internal/widget/AdapterViewCompat$OnItemClickListenerWrapper;->this$0:Landroid/support/v7/internal/widget/AdapterViewCompat;
+
+    .line 267
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 268
+    iput-object p2, p0, Landroid/support/v7/internal/widget/AdapterViewCompat$OnItemClickListenerWrapper;->mWrappedListener:Landroid/support/v7/internal/widget/AdapterViewCompat$OnItemClickListener;
+
+    .line 269
+    return-void
+.end method
+
+
+# virtual methods
+.method public onItemClick(Landroid/widget/AdapterView;Landroid/view/View;IJ)V
+    .locals 8
+    .param p2, "view"    # Landroid/view/View;
+    .param p3, "position"    # I
+    .param p4, "id"    # J
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroid/widget/AdapterView",
+            "<*>;",
+            "Landroid/view/View;",
+            "IJ)V"
+        }
+    .end annotation
+
+    .line 273
+    iget-object v6, p0, Landroid/support/v7/internal/widget/AdapterViewCompat$OnItemClickListenerWrapper;->mWrappedListener:Landroid/support/v7/internal/widget/AdapterViewCompat$OnItemClickListener;
+
+    .local v6, "$r3":Landroid/support/v7/internal/widget/AdapterViewCompat$OnItemClickListener;, ""
+    iget-object v7, p0, Landroid/support/v7/internal/widget/AdapterViewCompat$OnItemClickListenerWrapper;->this$0:Landroid/support/v7/internal/widget/AdapterViewCompat;
+
+    .line 273
+    .local v7, "$r4":Landroid/support/v7/internal/widget/AdapterViewCompat;, ""
+    move-object v0, v6
+
+    .line 273
+    move-object v1, v7
+
+    .line 273
+    move-object v2, p2
+
+    .line 273
+    move v3, p3
+
+    .line 273
+    move-wide v4, p4
+
+    .line 273
+    invoke-interface/range {v0 .. v5}, Landroid/support/v7/internal/widget/AdapterViewCompat$OnItemClickListener;->onItemClick(Landroid/support/v7/internal/widget/AdapterViewCompat;Landroid/view/View;IJ)V
+
+    .line 274
+    return-void
+    .end local v7    # "$r4":Landroid/support/v7/internal/widget/AdapterViewCompat;, ""
+    .end local v6    # "$r3":Landroid/support/v7/internal/widget/AdapterViewCompat$OnItemClickListener;, ""
+.end method

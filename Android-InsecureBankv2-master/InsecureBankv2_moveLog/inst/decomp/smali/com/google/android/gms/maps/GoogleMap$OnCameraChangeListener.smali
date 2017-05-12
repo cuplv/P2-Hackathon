@@ -1,0 +1,19 @@
+.class public interface abstract Lcom/google/android/gms/maps/GoogleMap$OnCameraChangeListener;
+.super Ljava/lang/Object;
+.source "dalvik_source_app-debug.apk"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/google/android/gms/maps/GoogleMap;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x609
+    name = "OnCameraChangeListener"
+.end annotation
+
+
+# virtual methods
+.method public abstract onCameraChange(Lcom/google/android/gms/maps/model/CameraPosition;)V
+.end method
