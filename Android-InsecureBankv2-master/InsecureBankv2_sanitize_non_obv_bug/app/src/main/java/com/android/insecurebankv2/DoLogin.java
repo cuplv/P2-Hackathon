@@ -120,8 +120,8 @@ public class DoLogin extends Activity {
 
 			return null;
 		}
-
-		protected void onPostExecute(Double result) {
+		@Override
+		protected void onPostExecute(String result) {
 			SanitizeActivity.sanitizeActivity(DoLogin.this);
 		}
 		protected void onProgressUpdate(Integer...progress) {}
